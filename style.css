@@ -1,0 +1,154 @@
+/*<!--------------- HOME WORK -------------------------------------------------------- --> */
+/*<!-- --------------------------------------------Задача 1 Traffic Light-------------------------    --> */
+ .traffic {
+ 	position: relative;
+ 	margin: auto;
+ 	margin-top: 5vh;
+ 	border: 1px solid black;
+ 	height: 60vh;
+ 	width: 10vw;
+ }
+
+ .red, .yellow, .green {
+ 	
+ 	height: 6vw;
+ 	width: 6vw;
+ 	border-radius: 50%;
+ 	border: 1px solid black;
+ 	position: absolute;
+ 	left: calc(50% - 3vw);
+
+ }
+
+ .red {
+ 	top: 10%;
+ 	background: red;
+ }
+
+ .yellow {
+ 	top: 40%;
+ 	background: yellow;
+ }
+
+ .green {
+ 	top: 70%;
+ 	background: green;
+ }
+
+
+/*<!-- --------------------------------------------Задача 2 Face-------------------------    -->*/
+
+.face {
+	width: 30vw;
+	height: 30vw;
+	border-radius: 50%;
+	background: #4DEE99;
+	margin: auto;
+	margin-top: 2vh;
+	position: relative;
+}
+
+.eye-right, .eye-left, .nose, .mouth, .smile {
+	background: white;
+	position: absolute;
+}
+
+.eye-right, .eye-left {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	top: 20%;
+}
+
+.eye-right {
+	left: 20%;
+}
+
+.eye-left {
+	right: 20%;
+}
+
+.nose {
+	width: 3vw;
+	height: 3vw;
+	top: 50%;
+	left: calc(50% - 1.5vw);
+}
+
+.mouth {
+	width: 9vw;
+	height: 1vw;
+	top: 75%;
+	left: calc(50% - 4.5vw);
+}
+
+.face:hover .mouth {
+	height: 4.5vw;
+	border-radius: 0 0 9vw 9vw;
+}
+
+/*<!-- --------------------------------------------Задача 3 Gradient-------------------------    -->*/
+
+.gradient {
+	margin: auto;
+	margin-top: 2vw;
+	width: 60vw;
+	height: 15vh;
+	background-image: linear-gradient(to top right, purple 10%, crimson 30%, orangered 50%, gold 75%);
+	text-align: center;
+	
+}
+
+.gradient p{
+	display: inline-block;
+	color: white;
+	line-height: 10vh;
+}
+
+/*<!-- --------------------------------------------Задача 4 Black Belt with Triangle-------------------------    -->*/
+
+.black {
+	width: 60vw;
+	height: 40vh;
+	margin: auto;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	background: black;
+	padding-top: 20vh;
+	
+}
+
+.blue {
+	width: 30vw;
+	height: 16vh;
+	margin: auto;
+	background: blue;
+	border: 1vh solid lightgrey;
+	position: relative;
+	
+}
+
+.blue::before, .blue::after {
+    content: ''; 
+    position: absolute;
+    left: calc(15vw - 5vh); 
+    top: -10vh;
+    border: 5vh solid transparent;
+    border-bottom: 4.5vh solid lightgrey;
+   }
+
+   .blue::after {
+    border-bottom: 5vh solid blue;
+    top: -9vh; 
+   }
+
+.blue p {
+	width: 50%;
+	height: 20%;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	color: white;
+}
